@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+  {% block body %}
+  <section>
+    <div class="container">
+        <div class="bodypart bodyr">
+            <div class="leftbody">
+                <div class="bottomleftbody bodyuser">
+                    <div class="online chatOnline">
+                        <div class="onlinetop">
+                            <h2>Users</h2>
+                        </div>
+                        <div class="allUser">
+                            <div class="onlinrdown" id="onlinefriendsup">
+                  
+                            </div>
+                            <div class="onlinrup" id="onlinefriendsdown">
+                  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rightbody rbody">
+                <div class='chathead'>
+                    <p>Deepak Pandey</p>
+                    <img src='images/boyAvatar.png'>
+                </div>
+                <div class='chatbody'>
+                    <div>
+                    </div>
+                    
+                </div>
+                <div class='chatsend'>
+                        <input name='chat' id='chat' placeholder='Send Message' type='text' class='chat' />
+                        <div class='sendchatbutton'>
+                            <i class="fa fa-telegram" aria-hidden="true"></i>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  {% endblock %}

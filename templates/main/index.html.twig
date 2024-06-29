@@ -1,0 +1,88 @@
+{% extends 'base.html.twig' %}
+
+  {% block body %}
+    <section class="header">
+      <div class="container">
+        <div class="headerBody">
+          <img src="{{asset('/images/logo-removebg-preview.png')}}" class="logo" />
+          <div class="rightsideheader">
+          <input id="searchbar" onkeyup="allFriends()" type="text" name="search" placeholder="Search Friends..">
+            <ul>
+              <li>
+                <a href="/" class="menu-a-tag">
+                  <div class="icon"><i class="fa fa-home"></i></div>
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="/chatsWindow" class="menu-a-tag">
+                  <div class="icon"><i class="fa fa-comments"></i></div>
+                  Messages
+                </a>
+              </li>
+              <li id="notifications">
+                <div class="icon"><i class="fa fa-bolt"></i></div><div id='total'></div>
+                Notifications
+                <div class="dropdown-notification" id="allNotifications">
+                    <ul id="listNotifications">
+                    </ul>
+                </div>
+              </li>
+              <li class="editP">
+                <div class="icon"><i class="fa fa-user"></i></div>
+                Profile
+                  <div class="dropdown-editProfile">
+                    <a href="editProfile">Edit Profile</a>
+                  </div>
+              </li>
+            </ul>
+            <div class="headimg" id="headimg">
+            </div>
+          </div>
+        </div>
+        <div id="searchlist">
+              <ol id="list">
+ 
+              </ol>
+            </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="bodypart">
+          <div class="leftbody">
+            <div class="topleftbody"></div>
+            <div class="middleleftbody" id="middleleftbody">
+            </div>
+            <div class="bottomleftbody">
+              <div class="online">
+                <div class="onlinetop">
+                  <h2>Users</h2>
+                </div>
+                <div class="allUser">
+                  <div class="onlinrdown" id="onlinrdown">
+                  
+                  </div>
+                  <div class="onlinrup" id="onlinrup">
+                  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rightbody">
+            <div class="wiym">
+              <textarea name="WIYM" class="areatext" placeholder="What's In Your Mind" id="postdescription"></textarea>
+              <div class="button" id="button">POST</div>
+            </div>
+            <div class="post-button"> 
+              <input type="file" id="photoPost" name="photoPost" class="photoPost" accept="application/pdf" /><br>
+            </div>
+            <div class="postpart" id='postpart'>
+              
+            </div>
+          </div>
+        </div>
+      </div>      
+    </section>
+  {% endblock %}
